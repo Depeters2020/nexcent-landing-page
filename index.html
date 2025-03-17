@@ -6,15 +6,18 @@
   <title>Document</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/output.css">
+  
 </head>
-<body>
-  <header class="h-[95vh] lg:w-[90%] md:w-[97%] w-[95%] m-auto relative">
-    <nav class="my-5 lg:flex lg:justify-between lg:items-center md:flex md:justify-between md:items-center font-[Inter] gap-7 md:text-[1rem]"> 
+<body class="font-[Inter]">
+  <!-- This is the header section -->
+  <header class="lg:h-full lg:w-[100%] md:w-[100%] w-[100%] relative bg-[#F5F7FA]  ">
+    
+    <nav class="lg:flex lg:justify-between lg:items-center md:flex md:justify-between md:items-center gap-7 md:text-[1rem] lg:w-[90%] md:w-[97%] w-[95%] m-auto pt-5"> 
       <div class="logo">
-        <img class="" src="/image/Logo.png" alt="Logo">
+        <img class="" src="/image/Logo-1.png" alt="Logo">
       </div>
-      <div class="navigation">
-        <ul class="lg:flex md:flex gap-7 lg:font-[500] md:font-[300] hidden">
+      <div>
+        <ul id="menu" class="lg:flex lg:flex-row md:flex md:flex-row lg:gap-7 lg:pt-0 lg:font-[500] md:font-[300] md:gap-4 md:pt-0 flex flex-col gap-2 text-center pt-4 hidden ">
           <li><a href="#">Home</a></li>
           <li><a href="#">Service</a></li>
           <li><a href="#">Feature</a></li>
@@ -23,16 +26,273 @@
           <li><a href="#">FAQ</a></li>
         </ul>
       </div>
-      <div class="btn lg:flex lg:items-center lg:gap-2.5 md:flex md:items-center md:text-[0.9rem] font-[500] ">
+      <div class="lg:flex lg:items-center lg:gap-2.5 md:flex md:items-center md:text-[0.9rem] font-[500] ">
         <a href="#" class="py-[0.63rem] px-[1.25rem] text-[#4CAF4F] md:block hidden">Login</a>
         <a href="#" class="bg-[#4CAF4F] py-[0.63rem] px-[1.25rem] md:py-[0.4rem] md:px-[1rem] md:block hidden text-white rounded-[0.38rem]">Sign up</a>
-        <img class="w-12 lg:hidden md:hidden absolute -top-2 right-0" src="/image/menu.png" alt="menu-icon">
+        <img id="toggle" class="w-12 lg:hidden md:hidden absolute top-2 right-0" src="/image/menu.png" alt="menu-icon">
       </div>
   </nav>
 
+<!-- Hero section -->
+  <div class="lg:flex lg:justify-between md:flex md:justify-between items-center lg:w-[90%] md:w-[97%] w-[95%] m-auto py-20">
+    <div class="lg:hero-text lg:w-[50%] md:hero-text md:w-[50%] w-[100%] ">
+      <h1 class="lg:text-[4rem] md:text-[4rem] text-6xl font-[600]">Empower Your Future:<span class="text-[#4CAF4F] "> Learn, Grow, and Succeed</span></h1>
+      <p class=" pt-3">Nexcent is more than just an e-learning platform—it's your gateway to mastering skills, unlocking potential, and standing out in the digital world. Learn from experts, showcase your growth, and take charge of your future.</p>
+      <a class="btn py-[0.88rem] px-[2rem] bg-[#4CAF4F] inline-block mt-[2rem] font-[500] text-white rounded-2xl" href="#">Register</a>
+    </div>
+    <div class="lg:bg-auto md:bg-auto lg:block md:block hidden">
+      <img src="/image/hero.png" alt="">
+    </div>
+  </div>
 
 
   </header>
+
+
+  <!-- community section -->
+   
+  <div id="community-section" class="w-[95%] m-auto my-16">
+    <div class="grid grid-cols-1 place-items-center gap-3">
+      <h2 class="lg:text-4xl font-semibold lg:w-[33.875rem] text-center md:text-4xl md:[33.875] text[1.7rem] text-3xl">We manage our entire community in a single system</h2>
+      <p class="font-normal">What distinguish Nextcent form others</p>
+    </div>
+    <div class="lg:grid lg:grid-cols-3 lg:gap-32 md:grid md:grid-cols-3 md:gap-8 mt-6 grid grid-cols-1 gap-8">
+      <div class="lg:flex lg:flex-col lg:place-items-center lg:text-center p-4 border-none lg:w-fit lg:h-auto rounded-2xl shadow md:flex md:flex-col md:place-items-center md:text-center md:w-fit gap-2 flex flex-col place-items-center text-center">
+        <div><img src="/image/com-1.png" alt=""></div>
+        <h2 class="lg:text-[1.75rem] md:text-[1.3rem] font-bold">Streamlined Membership</h2>
+        <p>Streamline your membership renewals and payments effortlessly  with our cutting-edge, automated tools designed for maximum  convenience. Our user-friendly platform ensures a seamless   experience, saving you time and reducing hassle.</p>  
+      </div>
+      <div class="lg:flex lg:flex-col lg:place-items-center lg:text-center p-4 border-none lg:w-fit lg:h-auto rounded-2xl shadow md:flex md:flex-col md:place-items-center md:text-center md:w-fit gap-2 flex flex-col place-items-center text-center">
+        <div><img src="/image/com-1.png" alt=""></div>
+        <h2 class="lg:text-[1.75rem] md:text-[1.3rem] font-bold">Course Management</h2>
+        <p>We deliver impactful learning experiences through our innovative and advanced course management system. Empower educators to design, organize, and deliver courses effortlessly while ensuring students stay engaged and supported.</p>  
+      </div>
+      <div class="lg:flex lg:flex-col lg:place-items-center lg:text-center p-4 border-none lg:w-fit lg:h-auto rounded-2xl shadow md:flex md:flex-col md:place-items-center md:text-center md:w-fit gap-2 flex flex-col place-items-center text-center">
+        <div><img src="/image/com-1.png" alt=""></div>
+        <h2 class="lg:text-[1.75rem] md:text-[1.3rem] font-bold">Seamless Payment</h2>
+        <p>We ensure smooth, hassle-free transactions with our secure and efficient payment processing solutions, designed to meet the needs of businesses and customers alike. Our cutting-edge technology guarantees the highest levels of security, protecting sensitive data and fostering trust.</p>  
+      </div>     
+    </div>
+  </div>
+   
+  <!-- The unseen of pending section -->
+
+  <section id="unseen-section" class="lg:flex lg:items-center lg:gap-5 lg:w-[80%] md:flex md:items-center md:gap-5 md:w-[80%] w-[95%] m-auto mb-20">
+        <div>
+          <img class="w-[120%]" src="/image/green-img.png" alt="">
+        </div>
+
+        <div id="green-text" class="lg:flex lg:flex-col lg:gap-3 md:flex md:flex-col md:gap-3 flex flex-col gap-3">
+          <h2 class="lg:w-[37.6rem] lg:text-4xl md:w-[25.6rem] md:text-4xl font-[600] text-[1.7rem]">The unseen of spending three years at Nexcent</h2>
+          <p class="lg:w-[37.6rem] lg:text-[0.88rem] md:w-[25.6rem] md:text-[0.88rem]">Embarking on a three-year journey at Nexcent is more than just an educational experience—it's a pathway to transforming lives through impactful learning. Nexcent empowers educators and learners with cutting-edge tools that enable dynamic collaboration, skill development, and growth. Beyond the structured courses and programs, it fosters a community of lifelong learning, innovation, and inspiration.
+        </p>
+          <div id="btn" class="mt-4">
+            <a class="bg-[#4CAF4F] py-[1rem] px-5 text-[1rem] text-white rounded-[0.5rem]" href="#">Learn More</a> 
+          </div>
+        </div>
+  </section>
+
+  <!-- helping a local section -->
+
+<div id="local" class="h-70vh bg-[#F5F7FA] py-8">
+  <div class="lg:flex md:flex lg:gap-60 lg:w-[90%] md:gap-8 md:w-[96%] w-[95%] m-auto">
+    <div id="left-div" class="flex flex-col gap-5">
+      <h2 class="lg:text-5xl lg:w-[31rem] md:text-3xl md:w-[25rem] font-semibold text-2xl">Helping people discover themselves</h2>
+      <p class="lg:w-[33.75rem] md:w-[26rem]">By combining innovation and determination, we played a key role in transforming lives into a success story. Through collaborative efforts and a focus on learners-driven solutions, we've helped them achieve new heights of efficiency, growth, and community impact.</p>
+    </div>
+    <div id="right-div" class="grid grid-cols-2 place-items-center lg:gap-10 md:gap-5 gap-2 pt-2.5">
+     <div id="text-num" class="lg:flex lg:items-center lg:gap-3 md:flex md:items-center md:gap-3">
+      <div class="">
+        <img  src="/image/local-1.png" alt="icon">
+      </div>
+      <div>
+        <h2 class="lg:text-[1.75rem] md:text-[1.3rem] text-[1rem] font-bold block">2,245,341</h2>
+        <p class="lg:text-[0.8rem] md:text-[0.6rem] text-[0.5rem] font-normal">Member</p>
+      </div>
+     </div>
+     <div id="text-num" class="lg:flex lg:items-center lg:gap-3 md:flex md:items-center md:gap-3">
+      <div class="">
+        <img  src="/image/local-2.png" alt="icon">
+      </div>
+      <div>
+        <h2 class="lg:text-[1.75rem] md:text-[1.3rem] text-[1rem] font-bold block">46,328</h2>
+        <p class="lg:text-[0.8rem] md:text-[0.6rem] text-[0.5rem] font-normal">Live session</p>
+      </div>
+     </div>
+     <div id="text-num" class="lg:flex lg:items-center lg:gap-3 md:flex md:items-center md:gap-3">
+      <div class="">
+        <img  src="/image/local-3.png" alt="icon">
+      </div>
+      <div>
+        <h2 class="lg:text-[1.75rem] md:text-[1.3rem] text-[1rem] font-bold block">828,867</h2>
+        <p class="lg:text-[0.8rem] md:text-[0.6rem] text-[0.5rem] font-normal">Enrolled</p>
+      </div>
+     </div>
+     <div id="text-num" class="lg:flex lg:items-center lg:gap-3 md:flex md:items-center md:gap-3">
+      <div class="">
+        <img  src="/image/local-4.png" alt="icon">
+      </div>
+      <div>
+        <h2 class="lg:text-[1.75rem] md:text-[1.3rem] text-[1rem] font-bold block">2,245,341</h2>
+        <p class="lg:text-[0.8rem] md:text-[0.6rem] text-[0.5rem] font-normal">Payment</p>
+      </div>
+     </div>      
+    </div>
+  </div>
+</div>
+
+<!-- How to section -->
+  <section id="how-to-section" class="lg:flex lg:items-center lg:gap-5 lg:w-[80%] md:flex md:items-center md:gap-5 md:w-[80%] w-[95%] m-auto mt-7 mb-10">
+        <div>
+          <img class="w-[120%]" src="/image/lady.png" alt="">
+        </div>
+        <div class="lg:flex lg:flex-col lg:gap-3 md:flex md:flex-col md:gap-3 flex flex-col gap-3">
+          <h2 class="lg:w-[37.6rem] lg:text-4xl md:w-[25.5rem] md:text-4xl font-[600] text-[1.7rem] mt-4">How to Enroll in Our Program</h2>
+          <p class="lg:w-[37.6rem] lg:text-[0.88rem] md:w-[25.4rem] md:text-[0.88rem]">Getting started with our program is quick and straightforward. Follow our easy step-by-step process to join a community of learners and achievers. Begin by exploring our programs to find the one that fits your goals perfectly. Once you’ve made your choice, complete the simple online application form, providing the necessary details.</p>
+          <div class="mt-4">
+            <a class="bg-[#4CAF4F] py-[1rem] px-5 text-[1rem] text-white rounded-[0.5rem]" href="#">Learn More</a> 
+          </div>
+        </div>
+  </section>
+
+ <!-- partner section -->
+ <section id="t-log-section" class="bg-[#F5F7FA] ">
+    <div class="py-12 lg:flex lg:items-center lg:gap-24 lg:w-[90%] md:flex md:items-center md:gap-5 md:w-[96%] w-[95%] m-auto lg:mb-20 md:mb-20 mb-10">
+      <div class="green-img">
+          <img class="w-[120%]" src="/image/t.png" alt="">
+        </div>
+
+        <div id="green-text" class="lg:flex lg:flex-col lg:gap-3 md:flex md:flex-col md:gap-3 flex flex-col gap-3">
+          
+          <p class="lg:w-[46.75rem] lg:text-[0.88rem] md:w-[25.4rem] md:text-[0.88rem]">At the heart of everything we do is a strong network of trusted partners who share our vision and commitment to excellence. These collaborations enable us to deliver innovative solutions, provide unmatched services, and create meaningful experiences for our clients and community. Our partners come from diverse industries, bringing a wealth of expertise, resources, and insights that empower us to stay at the forefront of innovation. From technology pioneers to strategic service providers, we work hand-in-hand to achieve goals that benefit everyone involved.</p>
+          <div id="smith">
+            <h4 class="text-[#4CAF4F] text-[1.25rem] font-[600]">Tim Smith</h4>
+            <p class="text-[#89939E] font-[400]">British Dragon Boat Racing Association</p>
+          </div>
+          <div id="t-icons" class="lg:flex md:grid md:grid-cols-3 lg:gap-10 md:gap-3 gap-10 grid grid-cols-3 place-items-center ">
+          <img class="w-12" src="/image/t-1.png" alt="">
+          <img class="w-12" src="/image/t-2.png" alt="">
+          <img class="w-12" src="/image/t-3.png" alt="">
+          <img class="w-12" src="/image/t-4.png" alt="">
+          <img class="w-12" src="/image/t-5.png" alt="">
+          <img class="w-12" src="/image/t-6.png" alt="">
+          <div id="meet-customers" class="lg:flex lg:gap-6 lg:items-center md:flex md:gap-6 md:items-center flex items-center justify-center jus col-span-3">
+            <a class="text-[#4CAF4F] text-[1.25rem] font-[600] " href="#">Meet all customers</a>
+            <img class="lg:block md:block hidden" src="/image/Right.png" alt="">
+          </div>
+        </div>
+        </div>
+    </div>
+        
+        
+  </section>
+
+
+  <!-- caring section -->
+
+  <section id="caring" class="lg:flex lg:flex-col lg:gap-8 md:flex md:flex-col md:gap-8 my-8 lg:w-[90%] md:w-[97%] w-[95%] m-auto mb-25">
+    <div class="lg:flex lg:flex-col lg:items-center md:flex md:flex-col md:items-center gap-6">
+      <h2 class="lg:text-4xl lg:font-semibold md:text-4xl md:font-semibold text-[1.7rem] text-center font-semibold">Caring is the new teaching method</h2>
+      <p class="lg:text-center lg:font-normal lg:w-[39.25rem] md:text-center md:font-normal md:w-[39.25rem] w-[100%]">At Nexcent, we believe that meaningful education begins with genuine care. That's why we have adopted "Caring is the New Teaching Method" as a core philosophy that guides every aspect of our learning environment. We understand that education is not just about delivering content but about building connections that empower learners to succeed academically, emotionally, and socially. You can also read about the latest information in our blog.​</p>
+    </div>
   
+    <div class="grid lg:grid-cols-3 lg:place-items-center md:grid-cols-3 md:place-items-center grid-cols-1 pt-5 place-items-center gap-4">
+      <div class="relative">
+        <img class="md:w-[90%] lg:w-[120%] z-0" src="/image/c-1.png" alt="">
+        <div class="lg:h-[11rem] lg:w-[19.8rem] lg:top-45 lg:left-6 md:h-[8rem] md:w-[11.8rem] md:top-24 md:left-4 bg-[#F5F7FA] absolute rounded-2xl text-center z-10 h-[8rem] w-[18rem] top-18 left-8 opacity-[0.9]">
+          <p class="lg:text-[1.25rem] md:text-[0.9rem] p-4">Creating Streamlined Safeguarding Processes with Nexcent</p>
+        <a class="flex justify-center items-center gap-2.5  md:text-[0.8rem] text-[#4CAF4F]" href="#">Read More <span><img src="/image/Right.png" alt=""></span> </a>
+        </div>
+        
+      </div>
+      <div class="relative">
+        <img class="md:w-[90%] lg:w-[100%] z-0" src="/image/c-2.png" alt="">
+        <div class="lg:h-[11rem] lg:w-[19.8rem] lg:top-45 lg:left-6 md:h-[8rem] md:w-[11.8rem] md:top-24 md:left-4 bg-[#F5F7FA] absolute rounded-2xl text-center z-10 h-[9.3rem] w-[18rem] top-18 left-8 opacity-[0.9] ">
+          <p class="lg:text-[1.25rem] md:text-[0.9rem] p-4">What are your safeguarding responsibilities and how can you manage them?</p>
+        <a class="flex justify-center items-center gap-2.5  md:text-[0.8rem] text-[#4CAF4F]" href="#">Read More <span><img src="/image/Right.png" alt=""></span> </a>
+        </div>
+        
+      </div>
+      <div class="relative">
+        <img class="md:w-[90%] lg:w-[100%] z-0" src="/image/c-3.png" alt="">
+        <div class="lg:h-[11rem] lg:w-[19.8rem] lg:top-45 lg:left-6 md:h-[8rem] md:w-[11.8rem] md:top-24 md:left-4 bg-[#F5F7FA] absolute rounded-2xl text-center z-10 h-[8rem] w-[18rem] top-18 left-8 opacity-[0.9]">
+          <p class="lg:text-[1.25rem] md:text-[0.9rem] p-4">Revamping the Membership Model with Nexcent</p>
+        <a class="flex justify-center items-center gap-2.5  md:text-[0.8rem] text-[#4CAF4F]" href="#">Read More <span><img src="/image/Right.png" alt=""></span> </a>
+        </div>
+        
+      </div>
+      
+     
+      
+  </section>
+
+<!-- Last section -->
+
+  <section id="last-section" class="lg:flex lg:items-center lg:flex-col lg:mb-12 lg:mt-0 md:mt-0 md:flex md:items-center md:flex-col md:mb-12 lg:gap-3.5 md:gap-12 flex items-center flex-col gap-4 -mt-10 mb-10">
+    <h1 class="lg:text-[4rem] lg:font-[600] lg:w-[50.2rem] lg:text-center md:text-center md:text-[3.5rem] md:font-[600] md:w-[45.2rem] text-3xl font-[600] w-[20rem] text-center">Do you want to have an insight on how we will impact your life?</h1>
+    <a class="lg:flex lg:items-center lg:gap-3 bg-[#4CAF4F] text-white lg:py-[0.88rem] lg:px-8 lg:rounded-2xl md:flex md:items-center md:gap-3 md-[#4CAF4F] md:py-[0.88rem] md:px-8 md:rounded-2xl flex items-center gap-2 rounded-[0.5rem] font-[500] py-[0.88rem] px-8" href="#">Get a Demo <span><img src="/image/Right-2.png" alt="arrow"></span></a>
+  </section>
+
+  <section id="footer-section" class="bg-[#263238] lg:h-[20.5rem] md:h-[20.5rem] h-[32rem]">
+    <div class="lg:w-[90%] md:w-[97%] w-[95%] lg:flex lg:flex-row md:flex md:flex-row lg:gap-[19.6rem] lg:items-start md:items-start md:gap-[4rem] m-auto lg:h-[25vh] md:h-[25vh] h-[40vh] flex flex-col-reverse items-center justify-center">
+      <div id="left-footer" class="flex flex-col h-24 gap-4 mt-14">
+        <div>
+          <img src="/image/Logo-2.png" alt="">
+        </div>
+        <p class="text-[#F5F7FA]">Copyright © 2020 Nexcent ltd.</p>
+        <p class="text-[#F5F7FA]">All rights reserved</p>
+        <div id="social-icon" class="flex gap-10">
+          <a href=""><img src="/image/insta.png" alt=""></a>
+          <a href=""><img src="/image/behance.png" alt=""></a>
+          <a href=""><img src="/image/x.png" alt=""></a>
+          <a href=""><img src="/image/yt-icon.png" alt=""></a>
+        </div>
+      </div>
+      <div id="right-footer" class=" flex lg:gap-24 md:gap-14 lg:mt-0 md:mt-0 mt-10 gap-14">
+        <div id="company" class="grid grid-cols-1 gap-6 mt-14">
+          <div>
+            <h2 class="text-white lg:text-[1.25rem] md:text-[1.25rem] font-[600] text-[1rem]">Company</h2>
+          </div>
+          <div class="lg:text-[1rem] md:text-[1rem] text-[0.7rem] text-white flex flex-col gap-3 cursor-pointer">
+            <a href="#">About us</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact us</a>
+            <a href="#">Pricing</a>
+            <a href="#">Testimonials</a>
+          </div>
+        </div> 
+        <div id="support" class="grid grid-cols-1 gap-6 mt-14">
+          <div>
+            <h2 class="text-white lg:text-[1.25rem] md:text-[1.25rem] font-[600] text-[1rem]">Support</h2>
+          </div>
+          <div class="lg:text-[1rem] md:text-[1rem] text-[0.7rem] text-white flex flex-col gap-3 cursor-pointer">
+            <a href="#">Help center</a>
+            <a href="#">Terms of service</a>
+            <a href="#">Legal</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Status</a>
+          </div>
+        </div> 
+        <div id="form" class="grid grid-cols-1 mt-14">
+          <div>
+            <h2 class="text-white lg:text-[1.25rem] md:text-[1.25rem] font-[600] text-[1rem]">Stay up to date</h2>
+            <div class="mt-8 relative">
+            <form action="" class="bg-[#515B60] rounded-2xl">
+              <input type="email" name="email" id="" class="p-2 outline-none text-white placeholder-[#D9DBE1] lg:text-[0.88rem] md:text-[0.88rem] lg:w-[15.9rem] md:w-52 w-full text-[0.6rem] " placeholder="Your email address">
+              <a href="#"><img class="absolute lg:top-[0.4rem] lg:right-2 md:top-[0.4rem] md:right-2 top-[0.1rem] right-2 p-1" src="/image/send.png" alt=""></a>
+            </form>
+          </div>
+          </div>
+          
+        </div> 
+         
+      </div>
+    </div>
+  </section>
+  
+
+
+
+  <script src="/app.js"></script>
 </body>
 </html>
